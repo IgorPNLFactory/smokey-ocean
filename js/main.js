@@ -174,9 +174,58 @@ document.querySelectorAll("[data-open-booking]").forEach((btn) =>
 document.querySelectorAll("[data-close-booking]").forEach((el) =>
   el.addEventListener("click", closeBooking)
 );
+
+// ===== Catering enquiry modal =====
+const cateringModal = document.getElementById("cateringModal");
+const cateringForm = document.getElementById("cateringForm");
+
+function openCatering() {
+  cateringModal.classList.add("open");
+  cateringModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  const dateInput = cateringForm.querySelector('input[name="date"]');
+  dateInput.min = new Date().toISOString().split("T")[0];
+}
+
+function closeCatering() {
+  cateringModal.classList.remove("open");
+  cateringModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+document.querySelectorAll("[data-open-catering]").forEach((btn) =>
+  btn.addEventListener("click", openCatering)
+);
+document.querySelectorAll("[data-close-catering]").forEach((el) =>
+  el.addEventListener("click", closeCatering)
+);
+
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && bookingModal.classList.contains("open")) closeBooking();
+  if (e.key !== "Escape") return;
+  if (bookingModal.classList.contains("open")) closeBooking();
+  if (cateringModal && cateringModal.classList.contains("open")) closeCatering();
 });
+
+if (cateringForm) {
+  cateringForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const data = new FormData(cateringForm);
+    const lines = [
+      "Hello Smoky Ocean! I'd like a hookah catering quote.",
+      `Name: ${data.get("name")}`,
+      `Event: ${data.get("type")}`,
+      `Date: ${data.get("date")}`,
+      `Guests: ${data.get("guests")}`,
+      `Location: ${data.get("location")}`,
+      `Hookahs: ${data.get("hookahs")}`,
+    ];
+    const note = (data.get("note") || "").trim();
+    if (note) lines.push(`Note: ${note}`);
+    const url = `https://wa.me/35799244895?text=${encodeURIComponent(lines.join("\n"))}`;
+    window.open(url, "_blank", "noopener");
+    closeCatering();
+  });
+}
 
 bookingForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -256,7 +305,7 @@ toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smoot
       speedY: 0.15 + Math.random() * 0.35,
       driftX: (Math.random() - 0.5) * 0.3,
       alpha: 0.02 + Math.random() * 0.05,
-      hue: Math.random() > 0.5 ? "120, 219, 226" : "21, 187, 255",
+      hue: Math.random() > 0.5 ? "120, 219, 226" : "56, 169, 175",
     };
   }
 

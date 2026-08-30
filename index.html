@@ -13,22 +13,25 @@
   <meta name="geo.region" content="CY-02" />
   <meta name="geo.placename" content="Limassol" />
   <meta name="theme-color" content="#060809" />
-  <link rel="canonical" href="https://smokey-ocean.vercel.app/" />
+  <link rel="canonical" href="https://www.smokyocean.cy/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="business.business" />
   <meta property="og:site_name" content="Smoky Ocean" />
   <meta property="og:title" content="Smoky Ocean — Hookah Lounge &amp; Shisha Bar in Limassol, Cyprus" />
   <meta property="og:description" content="Premium hookahs, signature cocktails and a truly relaxing atmosphere in the heart of Limassol. Open every day 13:00–02:00 (Fri–Sat until 03:30)." />
-  <meta property="og:url" content="https://smokey-ocean.vercel.app/" />
+  <meta property="og:url" content="https://www.smokyocean.cy/" />
+  <meta property="og:image" content="https://www.smokyocean.cy/img/event-toast.jpg" />
+  <meta property="og:image:alt" content="Guests toasting with champagne under the Smoky Ocean sign" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ru_RU" />
   <meta property="og:locale:alternate" content="el_GR" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Smoky Ocean — Hookah Lounge &amp; Shisha Bar in Limassol" />
   <meta name="twitter:description" content="Premium hookahs, signature cocktails and a truly relaxing atmosphere in the heart of Limassol, Cyprus." />
+  <meta name="twitter:image" content="https://www.smokyocean.cy/img/event-toast.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,11 +43,17 @@
   {
     "@context": "https://schema.org",
     "@type": "BarOrPub",
-    "@id": "https://smokey-ocean.vercel.app/#business",
+    "@id": "https://www.smokyocean.cy/#business",
     "name": "Smoky Ocean",
     "alternateName": "Smoky Ocean Hookah Lounge & Bar",
     "description": "Premium hookah lounge and shisha bar in Limassol, Cyprus. Signature hookahs, craft cocktails, PlayStation zones, board games and hookah catering across Cyprus.",
-    "url": "https://smokey-ocean.vercel.app/",
+    "url": "https://www.smokyocean.cy/",
+    "image": [
+      "https://www.smokyocean.cy/img/event-toast.jpg",
+      "https://www.smokyocean.cy/img/hookah-craft.jpg",
+      "https://www.smokyocean.cy/img/signature-cocktails.jpg",
+      "https://www.smokyocean.cy/img/lounge-interior.jpg"
+    ],
     "telephone": "+35799244895",
     "priceRange": "€€",
     "servesCuisine": ["Cocktails", "Tea", "Coffee", "Desserts"],
@@ -67,7 +76,7 @@
         "closes": "03:30"
       }
     ],
-    "hasMenu": "https://smokey-ocean.vercel.app/menu.html",
+    "hasMenu": "https://www.smokyocean.cy/menu.html",
     "acceptsReservations": "True",
     "sameAs": [
       "https://instagram.com/smokyocean_limassol"
@@ -87,11 +96,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://smokey-ocean.vercel.app/#website",
+    "@id": "https://www.smokyocean.cy/#website",
     "name": "Smoky Ocean",
-    "url": "https://smokey-ocean.vercel.app/",
+    "url": "https://www.smokyocean.cy/",
     "inLanguage": ["en", "ru", "el"],
-    "publisher": { "@id": "https://smokey-ocean.vercel.app/#business" }
+    "publisher": { "@id": "https://www.smokyocean.cy/#business" }
   }
   </script>
 </head>
@@ -111,6 +120,7 @@
         <li><a href="menu.html" data-i18n="nav.fullMenu">Full Menu</a></li>
         <li><a href="#catering" data-spy data-i18n="nav.catering">Catering</a></li>
         <li><a href="#visit" data-spy data-i18n="nav.visit">Visit Us</a></li>
+        <li><a href="blog/" data-i18n="nav.blog">Articles</a></li>
       </ul>
       <div class="lang" role="group" aria-label="Language">
         <button class="lang__btn" data-lang="en">EN</button>
@@ -179,6 +189,9 @@
       <div class="about__visual reveal">
         <div class="corner-frame">
           <div class="about__frame">
+            <div class="about__photo tilt">
+              <img src="img/hookah-craft.jpg" alt="Premium hookah with golden wind cover at Smoky Ocean lounge, Limassol" width="853" height="1280" loading="lazy" />
+            </div>
             <div class="about__card about__card--big tilt">
               <span class="about__card-icon">&#9749;</span>
               <h3 data-i18n="about.masters">Shisha Masters</h3>
@@ -262,10 +275,10 @@
         <div class="menu__panel active" data-panel="classic" role="tabpanel">
           <ul class="menu-list">
             <li class="menu-item">
-              <div class="menu-item__row"><span class="menu-item__name" data-i18n="menu.classicBowl">Classic Bowl</span><span class="menu-item__dots"></span><span class="menu-item__price">37€</span></div>
+              <div class="menu-item__row"><span class="menu-item__name" data-i18n="menu.classicBowl">Classic Bowl</span><span class="menu-item__dots"></span><span class="menu-item__price">39€</span></div>
             </li>
             <li class="menu-item">
-              <div class="menu-item__row"><span class="menu-item__name" data-i18n="menu.specialBowl">Special Bowl</span><span class="menu-item__dots"></span><span class="menu-item__price">47€</span></div>
+              <div class="menu-item__row"><span class="menu-item__name" data-i18n="menu.specialBowl">Special Bowl</span><span class="menu-item__dots"></span><span class="menu-item__price">49€</span></div>
             </li>
             <li class="menu-item">
               <div class="menu-item__row"><span class="menu-item__name" data-i18n="menu.premiumBowl">Premium Bowl</span><span class="menu-item__dots"></span><span class="menu-item__price">55€</span></div>
@@ -331,6 +344,11 @@
         <a href="menu.html" class="btn btn--primary" data-i18n="menu.cta">View the Full Menu</a>
         <p data-i18n="menu.ctaSub">Cocktails, teas, coffee, wine, beer, spirits &amp; desserts</p>
       </div>
+
+      <p class="food-note reveal">
+        <span data-i18n="food.note">Craving something to eat? We'll order any food you like straight to your table — just ask the staff or message us on</span>
+        <a href="https://wa.me/35799244895" target="_blank" rel="noopener">WhatsApp</a>
+      </p>
     </div>
   </section>
 
@@ -349,16 +367,47 @@
           <li data-i18n="cat.li3">Professional hookah masters on site</li>
           <li data-i18n="cat.li4">Delivery anywhere in Cyprus</li>
         </ul>
-        <button class="btn btn--primary reveal" data-open-booking data-i18n="cat.cta">Enquire About Catering</button>
+        <button class="btn btn--primary reveal" data-open-catering data-i18n="cat.cta">Enquire About Catering</button>
       </div>
       <div class="catering__visual reveal">
         <div class="corner-frame">
-          <div class="catering__panel tilt">
-            <span class="catering__icon" aria-hidden="true">&#127881;</span>
-            <h3 data-i18n="cat.panelTitle">Have an Event Coming Up?</h3>
-            <p data-i18n="cat.panelText">Every element — from tobacco selection to presentation — executed impeccably, wherever you celebrate.</p>
+          <div class="catering__panel catering__panel--photo tilt">
+            <img class="catering__photo" src="img/event-toast.jpg" alt="Guests toasting with champagne under the Smoky Ocean sign at a private event" width="853" height="1280" loading="lazy" />
+            <div class="catering__panel-overlay">
+              <span class="catering__icon" aria-hidden="true">&#127881;</span>
+              <h3 data-i18n="cat.panelTitle">Have an Event Coming Up?</h3>
+              <p data-i18n="cat.panelText">Every element — from tobacco selection to presentation — executed impeccably, wherever you celebrate.</p>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <p class="section-eyebrow center reveal" data-i18n="gal.eyebrow">Gallery</p>
+      <h2 class="section-title center reveal" data-i18n="gal.title">Moments at Smoky Ocean</h2>
+      <div class="gallery__grid reveal">
+        <figure class="gallery__item">
+          <img src="img/lounge-smoke.jpg" alt="Guest exhaling a thick cloud of hookah smoke in the Smoky Ocean lounge" width="854" height="1280" loading="lazy" />
+        </figure>
+        <figure class="gallery__item">
+          <img src="img/signature-cocktails.jpg" alt="Three signature cocktails next to the Smoky Ocean menu" width="853" height="1280" loading="lazy" />
+        </figure>
+        <figure class="gallery__item">
+          <video src="img/lounge-vibes.mp4" autoplay muted loop playsinline aria-label="Smoky Ocean lounge atmosphere video"></video>
+        </figure>
+        <figure class="gallery__item">
+          <img src="img/lounge-interior.jpg" alt="Cozy lounge seating with hookah and coffee at Smoky Ocean, Limassol" width="853" height="1280" loading="lazy" />
+        </figure>
+        <figure class="gallery__item">
+          <img src="img/board-games.jpg" alt="Shelf of board games at Smoky Ocean hookah lounge" width="853" height="1280" loading="lazy" />
+        </figure>
+        <figure class="gallery__item">
+          <img src="img/guest-cocktail.jpg" alt="Guest enjoying a cocktail next to a hookah at Smoky Ocean" width="853" height="1280" loading="lazy" />
+        </figure>
       </div>
     </div>
   </section>
@@ -435,6 +484,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </a>
       </div>
+      <p class="footer__links"><a href="menu.html" data-i18n="nav.fullMenu">Full Menu</a> · <a href="blog/" data-i18n="nav.blog">Articles</a></p>
       <p class="footer__copy" data-i18n="footer.copy">© 2026 Smoky Ocean. All rights reserved.</p>
     </div>
   </footer>
@@ -473,6 +523,63 @@
       </form>
     </div>
   </div>
+
+  <!-- ===== Catering enquiry modal ===== -->
+  <div class="modal" id="cateringModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-catering></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="cateringTitle">
+      <button class="modal__close" data-close-catering aria-label="Close">&times;</button>
+      <h3 id="cateringTitle" data-i18n="catform.title">Hookah Catering Enquiry</h3>
+      <p class="modal__hint" data-i18n="catform.hint">Tell us about your event — we'll open WhatsApp with your enquiry ready to send and reply with a quote the same day.</p>
+      <form id="cateringForm" class="booking-form">
+        <div class="booking-form__row">
+          <label><span data-i18n="modal.name">Name</span>
+            <input type="text" name="name" required placeholder="Your name" data-i18n-ph="modal.namePh" />
+          </label>
+          <label><span data-i18n="catform.eventType">Event type</span>
+            <select name="type">
+              <option value="Birthday" data-i18n="catform.typeBirthday">Birthday</option>
+              <option value="Wedding" data-i18n="catform.typeWedding">Wedding</option>
+              <option value="Villa / pool party" data-i18n="catform.typeVilla">Villa / pool party</option>
+              <option value="Corporate event" data-i18n="catform.typeCorporate">Corporate event</option>
+              <option value="Yacht / boat party" data-i18n="catform.typeYacht">Yacht / boat party</option>
+              <option value="Other" data-i18n="catform.typeOther">Other</option>
+            </select>
+          </label>
+        </div>
+        <div class="booking-form__row">
+          <label><span data-i18n="modal.date">Date</span>
+            <input type="date" name="date" required />
+          </label>
+          <label><span data-i18n="catform.guests">Guests</span>
+            <select name="guests">
+              <option>10–20</option><option>20–40</option><option>40–70</option><option>70+</option>
+            </select>
+          </label>
+        </div>
+        <div class="booking-form__row">
+          <label><span data-i18n="catform.location">Location</span>
+            <input type="text" name="location" required placeholder="Limassol, villa / venue name…" data-i18n-ph="catform.locationPh" />
+          </label>
+          <label><span data-i18n="catform.hookahs">Hookahs</span>
+            <select name="hookahs">
+              <option value="Not sure" data-i18n="catform.notSure">Not sure — advise me</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+            </select>
+          </label>
+        </div>
+        <label><span data-i18n="catform.note">Anything else? (optional)</span>
+          <input type="text" name="note" placeholder="Flavour wishes, timing, budget…" data-i18n-ph="catform.notePh" />
+        </label>
+        <button type="submit" class="btn btn--primary booking-form__submit" data-i18n="modal.submit">Send via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== Sticky WhatsApp ===== -->
+  <a class="wa-float" href="https://wa.me/35799244895?text=Hello%20Smoky%20Ocean!" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.29.18-1.42-.08-.12-.28-.2-.57-.34zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.83 9.83 0 0 1-1.51-5.25c0-5.44 4.43-9.87 9.89-9.87a9.8 9.8 0 0 1 6.98 2.9 9.8 9.8 0 0 1 2.9 6.98c0 5.45-4.44 9.87-9.88 9.87zm8.4-18.27A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.59 5.95L.06 24l6.3-1.65a11.87 11.87 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.4z"/></svg>
+  </a>
 
   <!-- ===== Back to top ===== -->
   <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
