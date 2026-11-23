@@ -54,7 +54,56 @@ const photographedPrices = {
   "Black Label": "9/110€",
 
   // Cognac
-  "Remy Martin": "14/160€"
+  "Remy Martin": "14/160€",
+
+  // Coffee & soft drinks
+  "Espresso": "4€",
+  "Americano / Ice Americano": "5€",
+  "Cappuccino": "6/8€",
+  "Latte / Ice Latte": "7€",
+  "Raf": "8€",
+  "Freddo Espresso": "5€",
+  "Freddo Cappuccino": "6€",
+  "Matcha Latte / Ice Matcha Latte": "8€",
+  "Coca-Cola": "5€",
+  "Fanta": "5€",
+  "Sprite": "5€",
+  "Red Bull": "5€",
+  "Acqua Panna": "4/8€",
+  "S.Pellegrino": "4/8€",
+  "Ice Apple": "13/24€",
+  "Ice Peach": "13/24€",
+  "Craft Lemonade": "8/19€",
+
+  // Author's tea
+  "Hot Citrus": "13/24€",
+  "Apple": "13/24€",
+  "Trans-Siberian Express": "14/25€",
+  "Pomegranate": "14/25€",
+  "Cherry Puer": "15/26€",
+  "Pinaloong": "14/25€",
+  "Moroccan Tea": "15/26€",
+  "Purple Blossom": "17/28€",
+
+  // Classic tea
+  "Longjing Tea": "17€",
+  "Tiguanyin": "17€",
+  "Da Hong Pao": "17€",
+  "Gabalong": "17€",
+  "Milky Oolong": "14€",
+  "Puer Wild": "14€",
+  "Jasmine": "11€",
+  "Sencha Tea": "11€",
+  "Assam": "10€",
+  "Earl Grey": "10€",
+  "Rooibos": "10€",
+  "Herbal Tea": "10€",
+  "Chamomile": "10€",
+  "Mint Tea": "10€",
+  "Buckwheat Tea": "10€",
+
+  // Additional photographed tea price correction
+  "Imperial Pu-Erh 2018": "19€"
 };
 
 document.querySelectorAll(".mi").forEach((item) => {
