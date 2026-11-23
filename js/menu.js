@@ -30,3 +30,28 @@ window.addEventListener("scroll", () => {
   toTop.classList.toggle("show", window.scrollY > 600);
 }, { passive: true });
 toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+// ===== Photographed menu price corrections =====
+const photographedPrices = {
+  "Heineken 0%": "6€",
+  "Corona": "7€",
+  "Stella": "7€",
+  "L'Authentique Cider": "8€",
+  "Belvedere": "12/140€",
+  "Grey Goose": "12/140€",
+  "Mare": "13/140€",
+  "Bombay Premier": "12/140€",
+  "Hendrick's": "12/140€",
+  "Monkey Shoulder": "11/130€",
+  "Black Label": "9/110€",
+  "Remy Martin": "14/160€"
+};
+
+document.querySelectorAll(".mi").forEach((item) => {
+  const name = item.querySelector(".mi__name")?.childNodes[0]?.textContent.trim();
+  const price = item.querySelector(".mi__price");
+
+  if (name && photographedPrices[name] && price) {
+    price.textContent = photographedPrices[name];
+  }
+});
